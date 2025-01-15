@@ -1,0 +1,93 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+body {
+    border: 1px solid red;
+    overflow-x: hidden;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+.main1-container {
+    position: relative;
+    width: 100%;
+    min-width: 1300px;
+    height: 173px;
+    box-sizing: border-box;
+    z-index: 13;
+    border: 1px solid blue;
+    background: linear-gradient(to right, #bf132b, #f64646);
+}
+
+.main1-first-line {
+    width: 1280px;
+    height: 105px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main1-logo {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 240px;
+    height: 66px;
+    margin-left: 0px;
+    margin-top: -33px;
+    background: url(./main1-asset/noonakitchen-logo-bage.png) no-repeat center center;
+    background-size: auto 66px;
+}
+
+.frm-nav-search  {
+    background: transparent;
+    font-size: 22px;
+    border-width: 0 0 2px 0;
+    padding-top: 10px;
+    padding-left: 13px;
+    width: 578px;
+    color: white;
+}
+
+nav input, img, button {
+    vertical-align: top;
+}
+
+.main1-input-area {
+    width: 578px;
+    position: relative;
+    padding-left: 17px;
+    margin-top: 12px;
+    text-align: left;
+    vertical-align: top;
+    display: table;
+    background: none;
+}
+
+.main1-input-area2 {
+    width: 578px;
+    height: 50px;
+    position: relative;
+    padding-left: 17px;
+    padding: 10 0 40px;
+    margin-top: 12px;
+    text-align: left;
+    vertical-align: top;
+    display: table;
+    background: none;
+    border: 2px solid white;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.main1-search-icon {
+    position: relative;
+    left: 540px;
+    bottom: 43px;
+    margin-right: 32px;
+    color: white;
+}
+
+nav input::placeholder {
+    color: white;
+    font-family: "Pretendard Variable";
+}
