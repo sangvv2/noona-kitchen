@@ -1,3 +1,13 @@
-.test{
-    width: 3lem;
+.btn-primary {
+    background-color: rgba(120, 41, 34, 0.81);
+    border-color: rgba(120, 41, 34, 0.81);
+}
+
+.btn-primary:hover{
+    background-color: rgba(120, 41, 34, 0.81);
+    border-color: rgba(120, 41, 34, 0.81);
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    padding: 0.5rem 6rem;
 }
