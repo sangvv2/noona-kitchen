@@ -1,0 +1,217 @@
+
+/* quick-link */
+
+nav.quick-link {
+    width: 100%; /* 기본적으로 화면 크기에 맞춤 */
+    max-width: 1280px; /* 최대 너비 제한 */
+    margin: 0 auto; /* 중앙 정렬 */
+    border-bottom: 1px solid #444;
+    padding-bottom: 30px;
+  }
+.quick-wrap {
+    display: flex;
+    gap: 30px;
+    padding-top: 30px;
+    
+}
+
+a.quick-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   border: 5px solid red;
+    padding: 0 20px;
+}
+
+.quick-item>span {
+
+}
+
+.quick-item>span>img {
+  
+    width: 52px;
+    height: 52px;
+    border-radius: 1.5rem;
+    background-color: #433d3d;
+    transition: all 0.5s;
+}
+
+
+.quick-item>span>img:hover {
+transform: scale(1.1);
+}
+
+.quick-item>h4 {
+    margin-top: 11px;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #6a6a6a;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    font-weight: 600;
+}
+.quick-item>h4:hover {
+
+    color: #000000;
+
+   
+}
+
+
+
+
+/* food-txt */
+
+.food-txts .inner{
+  margin: 0 auto;
+ max-width: 1280px; 
+}
+.food-txt{
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.food-txt-right a{  
+  position: relative;
+  padding-left: 15px; 
+  text-decoration: none;
+  color: #333;
+  
+}
+
+.food-txt-right a.active::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: url(../img/check-icon.gif) 
+  no-repeat center/contain;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  
+}
+
+
+
+
+/* 카드 */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .food-container {
+    max-width: 1280px; 
+    margin: 0 auto; 
+    background-color: #444;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    width: calc(25% - 30px); /* 한 줄에 4개 (gap 포함) */
+    text-align: center;
+    background-color: #fff;
+    overflow: hidden;
+    box-sizing: border-box; 
+    display: block; 
+  }
+
+  .card.show {
+
+}
+  
+  .card:hover {
+    
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: all 0.5s ease;
+  }
+  .card-image:hover {
+    transform: scale(1.1);
+ 
+  }
+  
+  .card-text {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .card-text h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .card-text p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color: #777;
+  }
+
+
+
+/* 화면이 720px 이하일 때 - 한 줄에 3개 */
+@media (max-width: 720px) {
+
+    a.quick-item {
+        align-items: center;
+        width: calc(33.333% - 10px);
+       border: 5px solid red;
+        padding: 0 10px;
+    }
+
+    .quick-wrap {
+        gap: 20px;
+        
+    }
+
+
+    .card {
+      width: calc(33.333% - 20px); 
+    }
+
+   
+  .food-txts .inner{
+ margin: 0;
+  width: calc(50%-30px);
+  }
+
+
+  .food-txt-right{
+    margin-right: 20px;
+  }
+
+  }
+  
+  /* 화면이 540px 이하일 때 - 한 줄에 2개 */
+  @media (max-width: 540px) {
+
+    .quick-wrap {
+        gap: 10px;
+        
+    }
+
+    .card {
+        width: calc(50% - 20px);
+        
+      }
+  }
+
