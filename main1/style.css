@@ -1,7 +1,7 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
 body {
-    border: 1px solid red;
+    border: 1px solid rgba(255, 0, 0, 0);
     overflow-x: hidden;
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
@@ -13,8 +13,8 @@ body {
     height: 173px;
     box-sizing: border-box;
     z-index: 13;
-    border: 1px solid blue;
-    background: linear-gradient(to right, #bf132b, #f64646);
+    border: 1px solid rgba(0, 0, 255, 0);
+    background: linear-gradient(to right,  #AB392F, rgba(120, 41, 34, 0.81));
 }
 
 .main1-first-line {
@@ -44,7 +44,7 @@ body {
     padding-top: 10px;
     padding-left: 13px;
     width: 578px;
-    color: white;
+    color: #FBFFDA;
 }
 
 nav input, img, button {
@@ -54,7 +54,7 @@ nav input, img, button {
 .main1-input-area {
     width: 578px;
     position: relative;
-    padding-left: 17px;
+    padding-left: 17 px;
     margin-top: 12px;
     text-align: left;
     vertical-align: top;
@@ -66,14 +66,14 @@ nav input, img, button {
     width: 578px;
     height: 50px;
     position: relative;
-    padding-left: 17px;
+    padding-left: 9px;
     padding: 10 0 40px;
     margin-top: 12px;
     text-align: left;
     vertical-align: top;
     display: table;
     background: none;
-    border: 2px solid white;
+    border: 2px solid #FBFFDA;
     border-left: none;
     border-right: none;
     border-top: none;
@@ -84,10 +84,55 @@ nav input, img, button {
     left: 540px;
     bottom: 43px;
     margin-right: 32px;
-    color: white;
+    color: #FBFFDA;
+    border: 1px solid rgba(0, 0, 255, 0);
 }
 
 nav input::placeholder {
-    color: white;
-    font-family: "Pretendard Variable";
+    color: #FBFFDA;
+    font-size: 22px;
+    font-family: "Pretendard";
+}
+
+.nav-link {
+    color: #454545;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #454545;
+}
+
+.icon-box {
+    width: 34px;
+    height: 34px;
+    background-color: #AB392F;
+    border-radius: 50%;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-second-line-son{
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-box-shadow: 0 0px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 0px 5px rgba(0, 0, 0, .175);
 }
