@@ -9,7 +9,7 @@
   align-items: center; 
   text-align: center;
 }
-.red{
+.red-bold{
   color:darkred;
   font-size: 35px;
   font-weight: 700;
@@ -136,10 +136,20 @@ footer{
   object-fit: cover; 
 }
 
-.top-pd{
+.star-book{
   margin-top: 20px;
+  margin-bottom: 40px;
+  border-color: rgba(120, 41, 34, 0.81);
 }
 
+.star-book:hover {
+  background-color: rgba(120, 41, 34, 0.81);
+  border-color: rgba(120, 41, 34, 0.81);
+}
+.star-book:active {
+  background-color: rgba(120, 41, 34, 0.81);
+  border-color: rgba(120, 41, 34, 0.81);
+}
 .custom-card{
   border-width: 2px;
   border-color: #AB392F;
@@ -165,6 +175,9 @@ footer{
 .star-icon:hover .fa-solid {
   display: inline-block; /* 채워진 별 표시 */
 }
+
+
+
 
 
 
