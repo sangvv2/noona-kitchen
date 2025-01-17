@@ -6,35 +6,36 @@
     <title>Log-in</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="icon" href="./favicon.png">
 </head>
 <body>
-    <div>
+    <div class="pt-1 pb-1 ps-2 text-line">
         <span> <a href="#">홈</a> </span>
         <span>></span>
         <span> <a href="./log-in.html">로그인</a> </span>
     </div>
-    <div class="text-center">
+    <div class="container text-center mt-5">
         <div>
-            <img src="#">
+            <img src="./logo.png" width="130px">
         </div>
     
         <div>
             <div>
-                <input type="text" placeholder="아이디">
+                <input type="text" class="d-grid gap-2 col-3 mx-auto" placeholder="아이디">
             </div>
-            <div>
-                <input type="text" placeholder="비밀번호">
+            <div class="pt-2 pb-3">
+                <input type="text" class="d-grid gap-2 col-3 mx-auto" placeholder="비밀번호">
             </div>
         </div>
     
-        <div>
-            <a href="#">아이디 찾기</a>
-            <a href="#">비밀번호 찾기</a>
+        <div class="text-line fs-6">
+            <span> <a href="#">아이디 찾기</a> </span>
+            <span> / </span>
+            <span> <a href="#">비밀번호 찾기</a> </span>
         </div>
     
         <div>
-            <div class="d-grid gap-2 col-3 mx-auto">
+            <div class="d-grid gap-2 col-3 mx-auto pt-3">
                 <button class="btn btn-primary" type="button" onclick="location.href='#' " >로그인</button>
                 <button class="btn btn-primary" type="button" onclick="location.href='/Sign-up/index.html' ">회원가입</button>
             </div>
@@ -44,7 +45,7 @@
             SNS 계정 로그인
         </div>
     
-        <div>
+        <div >
             <span>
                 <button>카카오 아이콘</button>
             </span>

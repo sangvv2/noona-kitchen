@@ -11,3 +11,8 @@
 .btn-group-lg>.btn, .btn-lg {
     padding: 0.5rem 6rem;
 }
+
+.text-line a {
+  text-decoration: none;
+  color: black;
+}
