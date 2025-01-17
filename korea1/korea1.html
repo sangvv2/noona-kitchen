@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="icon" href="assets/noona-kitchen-favicon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -50,7 +51,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <img src="assets/korea1-main.jpg" class="full-width-image" style="width: 100%; padding: 0;"/>
+            <img src="assets/korea1-main.jpg" class="full-width-main-image"/>
         </div>
     </div>
 
@@ -65,9 +66,9 @@
 
             <ul class="detailInfoNav">
                 <li>요리 재료</li>
-                <li>만드는 방법</li>
                 <li>관련 제품</li>
                 <li>관련 레시피</li>
+                <li>만드는 방법</li>
             </ul>
         </div>
 
@@ -93,14 +94,23 @@
 
         <div class="goods-Area">
             <h2 class="goods-title">관련 제품</h2>
-                <img src="assets/korea1-main.jpg" class="full-width-image" style="width: 100%; padding: 0;"/>
+
+            <div class="image-container">
+                
+                <img src="https://contents.lotteon.com/itemimage/20240321092924/LO/13/54/65/13/41/_1/35/46/51/34/2/LO1354651341_1354651342_1.jpg/dims/resizef/554X554" class="full-width-image"/>
                 <p class="goods-content">
-                    #태그 #태그 #태그 #태그 #태그 #태그
+                    비빔밥 그릇
                 </p>
-                <h2 class="goods-name">
-                    봄 된장 비빔밥
-                </h2>   
-            
+                <a href="https://www.lotteon.com/p/product/LO1354651341?sitmNo=LO1354651341_1354651342&mall_no=1&dp_infw_cd=SCH%5E%5E%EC%8A%A4%ED%85%90%EB%B9%84%EB%B9%94%EB%B0%A5%EA%B7%B8%EB%A6%87&areaCode=SCH" 
+                target="_blank"> <!-- 이동할 페이지의 URL -->
+                <div class="overlay">
+                    <div class="text-top">관련 제품은 누나키친과 인근 매장에서 구매 가능합니다</div>
+                    <div class="icon-center">
+                        <i class="fa-solid fa-shop"></i>
+                    </div>
+                </div>
+                </a>
+            </div>
         </div>
 
         <!-- 중간에 구분선 추가 -->
@@ -109,8 +119,10 @@
         <div class="relatedRecipeArea">
             <h2 class="relatedRecipe-title">관련 레시피</h2>
 
-            <img src="assets/korea1-main.jpg" class="full-width-image" style="width: 100%; padding: 0;"/>
-                <p class="goods-content">
+            <a href="#"> <!-- 이동할 페이지의 URL -->
+            <img src="assets/korea1-main.jpg" class="full-width-image"/>
+            </a>
+                <p class="relatedRecipeContent">
                     #태그 #태그 #태그 #태그 #태그 #태그
                 </p>
                 <h2 class="relatedRecipe-name">
@@ -118,6 +130,52 @@
                 </h2>   
             
         </div>
+
+         <!-- 중간에 구분선 추가 -->
+         <div class="divider"></div>
+
+         <!-- 만드는 방법 -->
+         <div class="howToMakeArea">
+            <h2 class="howToMake-title">만드는 방법</h2>
+            <img src="https://www.okitchen.co.kr/pds/editor/178_1.jpg" class="full-width-image"/>
+            <dl>
+            <dt class="howToMakeContent"> Step 1 </dt>
+                <dd>
+                    표고버섯은 얇게 썰고, 민가닥버섯은 낱낱이 가른다.
+                </dd>
+            </dl>
+            <img src="https://www.okitchen.co.kr/pds/editor/178_2.jpg" class="full-width-image"/>
+            <dl>
+                <dt class="howToMakeContent"> Step 2 </dt>
+                    <dd>
+                        돌나물은 흐르는 물에 헹궈 체에 밭쳐 물기를 제거한다.
+                    </dd>
+            </dl>
+            <img src="https://www.okitchen.co.kr/pds/editor/178_3.jpg" class="full-width-image"/>
+            <dl>
+                <dt class="howToMakeContent"> Step 3 </dt>
+                    <dd>
+                        중간불로 달군 팬을 들기름을 두른 뒤 손질한 버섯을 넣어 노릇하게 볶는다.
+                    </dd>
+            </dl>
+            <img src="https://www.okitchen.co.kr/pds/editor/178_4.jpg" class="full-width-image"/>
+            <dl>
+            <dt class="howToMakeContent"> Step 4 </dt>
+                <dd>
+                    불을 끈 뒤 잔열로 오뚜기 된장무침양념과 깨소금을 넣어 함께 익힌다.
+                </dd>
+            </dl>
+            <img src="https://www.okitchen.co.kr/pds/editor/178_5.jpg" class="full-width-image"/>
+            <dl>
+            <dt class="howToMakeContent"> Step 5 </dt>
+                <dd>
+                    그릇에 밥을 담을 뒤 돌나물을 얹고 버섯된장볶음과 계란프라이를 곁들여 마무리한다.
+                </dd>
+            </dl>
+
+        </div>
+
+
     </div>
 
 </body>

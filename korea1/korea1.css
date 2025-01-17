@@ -1,3 +1,6 @@
+/* import */
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
 @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
@@ -5,6 +8,7 @@
     font-style: normal;
 }
 
+/* 전체 설정 */
 body {
     font-family: 'Pretendard-Regular', sans-serif;
 }
@@ -18,12 +22,21 @@ body {
     word-break: keep-all;
 }
 
+/* 메인 사진 */
+.full-width-main-image {
+    display: block;
+    width: 100%;
+    height: auto; /* 비율 유지 */
+    padding: 0;
+}
+
+/* 구분선 */
 .first-divider {
     width: 100%;
     max-width: 768px;
     height: 2px;  /* 구분선의 두께 */
     background-color: #ccc;  /* 구분선 색상 */
-    margin: 100px 0;  /* 구분선 위 아래 여백 */
+    margin: 50px 0;  /* 구분선 위 아래 여백 */
 }
 
 .divider {
@@ -31,9 +44,10 @@ body {
     max-width: 768px;
     height: 2px;  /* 구분선의 두께 */
     background-color: #ccc;  /* 구분선 색상 */
-    margin: 100px 0;  /* 구분선 위 아래 여백 */
+    margin: 50px 0;  /* 구분선 위 아래 여백 */
 }
 
+/* 음식 이름 및 음식 설명 */
 .food-title {
     font-size: 45px;
     color: #333;
@@ -55,6 +69,7 @@ body {
     margin-top: 40px;
 }
 
+/* 레시피 재료 */
 .ingredientArea {
     position: relative;
     float: left;
@@ -87,10 +102,7 @@ body {
     line-height: 1.5;
 }
 
-.ingredientContent dt{
-    color: #AB392F;
-}
-
+/* 관련 제품 */
 .goods-Area {
     position: relative;
     float: left;
@@ -101,6 +113,7 @@ body {
 
 .goods-Area img {
     margin: 20px 0;
+    position: relative;
 }
 
 .goods-title {
@@ -122,18 +135,71 @@ body {
     color: #666;
     font-weight: lighter;
     margin-top: 10px;
+    text-align: center; /* 글자 가운데 정렬 */
 }
 
+.image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.full-width-image {
+    display: block;
+    width: 100%;
+    height: auto; /* 비율 유지 */
+    transition: 1.0s ease; /* 부드러운 전환 효과 */
+    margin: 0px;
+    padding: 0;
+}
+
+.image-container:hover .full-width-image {
+    filter: brightness(1); /* 사진 어둡게 */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0; /* 기본적으로 숨김 */
+    background-color: rgba(0, 0, 0, 0.1); /* 반투명 검은 배경 */
+    transition: opacity 0.3s ease;
+    margin: 0;
+}
+
+.image-container:hover .overlay {
+    opacity: 1; /* hover 시 표시 */
+}
+
+.text-top {
+    position: absolute;
+    top: 10%;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.icon-center {
+    font-size: 40px; /* 아이콘 크기 */
+    margin-top: 10px;
+}
+
+/* 관련 레시피 */
 .relatedRecipeArea {
     position: relative;
+    overflow: hidden; /* 이미지를 넘지 않도록 숨기기 */
     float: left;
     width: 100%; /* 부모 요소의 너비에 맞춰 자동 조정 */
     max-width: 768px; /* 최대 너비를 768px로 제한 */
     line-height: 1.5;
-}
-
-.relatedRecipeArea img {
-    margin: 20px 0;
 }
 
 .relatedRecipe-title {
@@ -157,6 +223,51 @@ body {
     margin-top: 10px;
 }
 
+.relatedRecipeArea img {
+    margin: 20px 0;
+    width: 100%;
+    transition: transform 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+.relatedRecipeArea img:hover {
+    transform: scale(1.1); /* 이미지를 확대하는 효과 */
+}
+
+/* 만드는 방법 */
+.howToMakeArea {
+    position: relative;
+    float: left;
+    width: 100%; /* 부모 요소의 너비에 맞춰 자동 조정 */
+    max-width: 768px; /* 최대 너비를 768px로 제한 */
+    line-height: 1.5;
+}
+
+.howToMake-title {
+    font-size: 35px;
+    color: #333;
+    font-weight: 700;
+    margin: 30px 0;
+}
+
+.howToMakeArea dt{
+    font-size: 28px;
+    color: #AB392F;
+    margin-top: 40px;
+    font-weight: 600;
+}
+.howToMakeArea dd{
+    font-size: 28px;
+    color: #666;
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+
+.howToMakeContent{
+    max-width: 768px;
+    line-height: 1.5;
+}
+
+
 /* 기본 상태에서 detailInfoNav를 숨깁니다 */
 .detailInfoNav {
     display: none; /* 기본적으로 숨김 */
@@ -169,17 +280,20 @@ body {
     margin-right: 15px;
 }
 
+/* 구분선 */
 .first-divider {
-    width: 100%;
-    max-width: 768px;
-    height: 2px;  /* 구분선의 두께 */
-    background-color: #ccc;  /* 구분선 색상 */
-    margin: 100px 0;  /* 구분선 위 아래 여백 */
     display: none;
 }
 
+.content {
+    overflow: visible; /* overflow 속성 확인 */
+}
 
 .detailInfoNav{
+    display: flex; /* 기본적으로 보여지도록 수정 */
+    position: sticky;
+    top: 0; /* 화면 상단에 고정 */
+    z-index: 10; /* 다른 요소 위에 보이도록 */
     list-style: none; /* 기본 리스트 스타일 제거 */
     padding: 0;
     margin: 70px 0;
