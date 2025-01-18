@@ -10,10 +10,8 @@ body, html {
     display: flex;
     position: relative;
     width: 100%;
-    min-width: 1300px;
     height: 170px;
     box-sizing: border-box;
-    z-index: 13;
     background: linear-gradient(to right,  #AB392F, rgba(120, 41, 34, 0.99));
 }
 
@@ -26,6 +24,9 @@ body, html {
 
 .main1-second-line {
     display: flex;
+    position: relative;
+    bottom: 66px;
+    z-index: 31;
 }
 
 .main1-logo {
@@ -156,6 +157,11 @@ nav input::placeholder {
     display: flex;
 }
 
+nav {
+    display: flex;
+    padding: 0 15px;
+}
+
 nav a{
     text-decoration: none;
     color: #454545;
@@ -174,6 +180,7 @@ nav a:hover{
 }
 
 .bg-body-tertiary {
+    width: 100%;
     background-color: rgb(255 255 255) !important;
 }
 
@@ -246,16 +253,36 @@ nav a:hover{
 
 .main1-category-item {
     margin-right: 800px;
-
 }
 
-@media screen and (max-width:1300px) {
-    .btn-mom {
-        width: 200px;
-        position: absolute;
-        margin-right: 60px;
+.main1-second-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main1-container2 {
+    position: absolute;
+    width: 100%;
+}
+
+
+@media screen and (min-width:1800) {
+    .main1-carousel-bg {
+        display: none;
     }
     
+}
+
+@media screen and (min-width:1025px) and (max-width:1400px) {
+    .btn-mom {
+        width: 1000px;
+        position: absolute;
+    }
+
+    .main1-category-item {
+        position: relative;
+        left: -40px;
+    }
 }
 
 @media  (max-width:768px) and (max-width:1024px) {
@@ -269,7 +296,7 @@ nav a:hover{
     }
 
     .frm-nav-search  {
-        width: 390px;
+        width: 100vh;
         height: 172px;
         position: absolute;
         top: -4px;
@@ -301,9 +328,21 @@ nav a:hover{
         margin-top: -6px;
     }
 
+    .main1-input-area-dis2 {
+        display: none;
+    }
+
+    .main1-input-area-dis {
+        display: block;
+    }
+
+    .main1-icon-category {
+        
+    }
+
 }
 
-@media (min-width:320px) and (max-width:768px) {
+@media (min-width:320px) and (max-width:1200px) {
 
     .navbar-expand-lg .navbar-nav {
         flex-direction: row;
@@ -314,14 +353,13 @@ nav a:hover{
         height: 172px;
         position: absolute;
         top: -4px;
-        right: 298px;
+        left: -210px;
     }
     
     .main1-input-area {
-        position: absolute;
+        position: relative;
         text-align: center;
         width: 10px;
-        position: relative;
     }
     
     .main1-input-area2 {
@@ -340,16 +378,18 @@ nav a:hover{
         display: block;
         width: 34px;
         height: 34px;
-        position: absolute;
-        right: 7px;
-        bottom: 28px;
+        position: relative;
+        right: -338px;
+        bottom: -97px;
         color: #FBFFDA;
     }
+    
     
     nav input::placeholder {
         text-decoration:none;
         font-size: 19px;
     }
+    
 
     .navbar {
         --bs-navbar-brand-color: none;
