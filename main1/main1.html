@@ -11,25 +11,37 @@
   </head>
   <body>
     <nav class="main1-container">
+      <div class="min-category"></div>
       <div class="main1-first-line container">
         <div class="row">
         <h1>
-          <a href="#" class="main1-logo col-lg-6"></a>
+          <a href="#" class="main1-logo col-lg-6 col-md-6 col-sm-6"></a>
         </h1>
-        <div class="container-fluid main1-input-area col-lg-6">
+        <div class="container-fluid main1-input-area col-lg-6 col-md-6 ">
           <form class="frm-nav-search" >
-            <input class="main1-input-area2" type="text" style="color:  #FBFFDA;" maxlength="20" placeholder="NOONAA KITCHEN의 비밀 레시피 검색하기 (예:샌드위치)">
+            <input class="main1-input-area2 main1-input-area-dis2" type="text" style="color:  #FBFFDA;" maxlength="26" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" placeholder="NOONAA KITCHEN의 비밀 레시피 검색하기 (예:샌드위치)">
+            <input class="main1-input-area2 main1-input-area-dis" type="text" style="color:  #FBFFDA;" maxlength="15" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" placeholder="NOONAA KITCHEN 레시피 검색하기">
             <i class="fa-solid fa-magnifying-glass main1-search-icon"></i>
+            <i class="fa-solid fa-magnifying-glass main1-search-icon2"></i>
+
+            <div class="min-category2">
+              <a href="#">
+                <i class="fa-solid fa-bars icon-box main1-icon-category" style="color: white;"></i>
+              </a>
+              <a href="#">
+                <i class="fa-solid fa-user icon-box main1-icon-category" style="color: white;"></i>
+              </a>
+            </div>
           </form>
         </div>
       </div>
     </div>
 
-      <div class="main1-second-line">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <div class="navbar-nav container">
-                <div class="row">
+    <div class="main1-second-line">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="collapse navbar-collapse container" id="navbarNavDropdown">
+            <div  class="row">
+              <div class="navbar-nav">
                 <div class="main1-category-space">
                   <div class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle nav-second-line-son" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -41,13 +53,13 @@
                           <div><a href="#">종류</a></div>
 
                           <div><a href="#">재료</a></div>
-                        
+                      
                           <div><a href="#">방법</a></div>
-                        
+                      
                           <div><a href="#">테마</a></div>
-                        
+                      
                           <div><a href="#">기념일</a></div>
-                        
+                      
                           <div><a href="#">도구</a></div>
                       </div>
                       <div class="main1-category-area2">
@@ -66,18 +78,20 @@
                   </div>
                 </div>
               </div>
-                <div class="nav-item nav-second-line-son">
-                  <a class="nav-link active dis-none" aria-current="page" href="#">즐겨찾기</a>
-                </div>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end btn-mom">
-                  <button class="btn btn-primary me-md-2 main1-second-line-btn" type="button">로그인</button>
-                  <button class="btn btn-primary main1-second-line-btn" type="button">회원가입</button>
-                </div>
+            </div>
+              <div class="nav-item nav-second-line-son">
+                <a class="nav-link active dis-none main1-category-item" aria-current="page" href="#" style="width: 130px;">즐겨찾기</a>
+              </div>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end btn-mom">
+                <button class="btn btn-primary me-md-2 main1-second-line-btn" style="width: 100px;" type="button">로그인</button>
+                <button class="btn btn-primary main1-second-line-btn" style="width: 100px;" type="button">회원가입</button>
+              </div>
             </div>
           </div>
-        </nav>
-      </div>
-    </nav>
+        </div>
+      </nav>
+    </div>
+  </nav>
 
     <main>
       <div class="main1-container2">
