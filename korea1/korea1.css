@@ -452,42 +452,98 @@ body {
 }
 
 /* footer */
-footer {
-    background-color: black;
+.footer{
+    display: flex;
+    justify-content: space-between;
     color: white;
-    margin-top: 100px;
+    bottom:0px;
   }
-
-  .first-line {
-    border-bottom: 1px solid #392d23;
+  .footer-container-fluid{
+    margin-left: 300px;
+    margin-right: 300px;
   }
-
-  .second-line a {
+  .footer-left {
+    text-align: left;
+    padding-top:20px;
+    flex: 1;
+  }
+  .footer-right{
+    text-align: right;
+    justify-content: flex-start;
+  }
+  footer{
     color: white;
-    text-decoration: none;
+    justify-content: flex-end;
+    padding-top:20px;
   }
-
-  .third-line {
-    display: none;
+  .share-button{
+    margin-bottom: 15px;
+    margin-right: 15px;
+    font-size: 30px;
+  }
+  
+  .footer-content{
+    margin: 0 auto;
+    padding: 10px 300px;
+    position: relative;
+    background: rgba(120, 41, 34, 0.81);
+    width: 100%;
+  }
+  .footer-second-content{
+    margin: 0 auto;
+    padding: 10px 300px;
+    position: relative;
+    background: #AB392F;
+    width: 100%;  
+    display: relative;
+    justify-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap; 
     text-align: center;
   }
-
-  @media screen and (max-width: 48rem) {
-    .second-line .row {
-        display: flex;
-        flex-direction: column; /* 컬럼들을 세로로 정렬 */
-        text-align: center; /* 가운데 정렬 */
+  .foot-first-line{
+    position: relative;
+    margin: 0 0;
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    white-space: normal; 
+    text-align: center;
+    word-wrap: break-word;
+  }
+  
+  .footer-right span i:hover{
+      cursor: pointer;
+  }
+  
+  @media screen and (max-width: 48rem){
+      .footer-left .footer-right{
+        text-align: center;
+      }
+  
+      .second-content {
+          flex-direction: column; 
+          
+        }
+  
+      .footer {
+          flex-direction: column; 
+          align-items: center; 
+      }
+  
+      .footer-container-fluid {
+          padding-left: 15px; 
+          padding-right: 15px;
+      }
+  
+      .text-center {
+          font-size: 1.2rem;
+          padding: 5px; 
+          line-height: 1.8;
+      }
     }
-    .second-line .col {
-        margin-bottom: 10px; /* 항목 간격 추가 */
-    }
-    .third-line {
-        text-align: center; /* 텍스트 중앙 정렬 */
-        margin-top: 20px; /* 위아래 여백 추가 */
-    }
-    .flag-img {
-        display: inline-block;
-        vertical-align: middle; /* 플래그와 텍스트 정렬 */
-        margin-right: 5px; /* 플래그와 텍스트 간격 추가 */
-    }
-}
