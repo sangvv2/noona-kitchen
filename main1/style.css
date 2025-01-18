@@ -850,14 +850,6 @@ nav a:hover{
     
 }
 
-
-@media screen and (min-width:1800) {
-    .main1-carousel-bg {
-        display: none;
-    }
-    
-}
-
 @media screen and (min-width:1025px) and (max-width:1400px) {
     .btn-mom {
         width: 1000px;
