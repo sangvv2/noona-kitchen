@@ -233,12 +233,16 @@ nav a:hover{
 }
 
 .main1-category-item {
-    margin-right: 800px;
+    margin-right: 1200px;
 }
 
 .main1-second-btn {
     display: flex;
     justify-content: flex-end;
+}
+
+.text-line-first {
+    padding-left: 16%;
 }
 
 .main1-container2 {
@@ -264,6 +268,10 @@ nav a:hover{
     nav a:hover{
         color: #AB392F;
     }
+
+    .main1-category-item {
+        margin-right: 800px;
+    }
     
 }
 
@@ -285,6 +293,10 @@ nav a:hover{
     
     nav a:hover{
         color: #AB392F;
+    }
+
+    .main1-category-item {
+        margin-right: 800px;
     }
 }
 
@@ -343,6 +355,10 @@ nav a:hover{
         color: #FBFFDA;
     }
 
+    .main1-category-item {
+        margin-right: 800px;
+    }
+
     .main1-search-icon2 {
         display: block;
         width: 34px;
@@ -378,11 +394,10 @@ nav a:hover{
     .min-category2 {
         width: 70px;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         position: absolute;
         right: 0;
         top: -40px;
-        margin-right: -5px;
     }
 
     .icon-box {
@@ -414,6 +429,10 @@ nav a:hover{
 
     .navbar-expand-lg .navbar-nav {
         flex-direction: row;
+    }
+
+    .main1-category-item {
+        margin-right: 800px;
     }
 
     .main1-logo {
@@ -537,6 +556,11 @@ nav a:hover{
 
     .navbar-expand-lg .navbar-nav {
         flex-direction: row;
+    }
+
+
+    .main1-category-item {
+        margin-right: 800px;
     }
 
     .frm-nav-search  {
