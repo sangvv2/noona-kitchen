@@ -104,17 +104,25 @@ body {
 }
 
 /* 음식 이름 및 음식 설명 */
+.korea1-detailInfo .food-title{
+    display: flex;
+    justify-content: flex-start;
+    text-align: left; /* 텍스트를 왼쪽 정렬 */
+}
+
 .food-title {
     font-size: 45px;
     color: #333;
     margin-top: 80px;
     font-weight: 700;
+    position: relative;
 }
 
 .korea1-detailInfo {
     position: relative;
     float: left;
     max-width: 768px;
+    width: 100%;
     line-height: 1.5;
 }
 
