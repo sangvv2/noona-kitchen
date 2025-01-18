@@ -738,6 +738,10 @@ body, html {
     color: #FBFFDA;
 }
 
+.main1-search-icon2 {
+    display: none;
+}
+
 nav input::placeholder {
     color: #FBFFDA;
     font-size: 22px;
@@ -896,6 +900,15 @@ nav a:hover{
     .main1-carousel-bg {
         display: none;
     }
+
+    nav a{
+        text-decoration: none;
+        color: #454545;
+    }
+    
+    nav a:hover{
+        color: #AB392F;
+    }
     
 }
 
@@ -908,6 +921,15 @@ nav a:hover{
     .main1-category-item {
         position: relative;
         left: -40px;
+    }
+
+    nav a{
+        text-decoration: none;
+        color: #454545;
+    }
+    
+    nav a:hover{
+        color: #AB392F;
     }
 }
 
@@ -1022,6 +1044,15 @@ nav a:hover{
     .icon-box:hover {
         background-color: #AB392F;
     }
+
+    nav a{
+        text-decoration: none;
+        color: #454545;
+    }
+    
+    nav a:hover{
+        color: #AB392F;
+    }
 }
 
 @media (min-width:820px) and (max-width:1000px) {
@@ -1135,6 +1166,15 @@ nav a:hover{
     .icon-box:hover {
         background-color: #AB392F;
     }
+
+    nav a{
+        text-decoration: none;
+        color: #454545;
+    }
+    
+    nav a:hover{
+        color: #AB392F;
+    }
 }
 
 
@@ -1226,6 +1266,15 @@ nav a:hover{
     
     .icon-box:hover {
         background-color: #782922e8;
+    }
+
+    nav a{
+        text-decoration: none;
+        color: #454545;
+    }
+    
+    nav a:hover{
+        color: #AB392F;
     }
 }
 
