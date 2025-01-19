@@ -1005,7 +1005,7 @@ nav a:hover{
   position: relative;
   bottom: 35em;
   left: 1100px;
-  width: 500px;
+  width: 600px;
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -1101,7 +1101,7 @@ nav a:hover{
   width: 50px;
   width: 50px;
   bottom: -255px;
-  left: -817px;
+  left: -716px;
   transition: all 1s ease;
 }
 
