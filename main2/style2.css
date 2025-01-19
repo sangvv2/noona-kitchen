@@ -1,3 +1,258 @@
+.mall-image {
+  width: 100%;
+  height: 405px;
+  background-image: url('./image/maincook.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  align-items: center; 
+  text-align: center;
+}
+.red-bold{
+  color:darkred;
+  font-size: 35px;
+  font-weight: 700;
+}
+.easier-text{
+  font-size: 38px;
+  color: #333;
+  font-weight: 600;
+}
+.btn{
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 48rem){
+  .mall .mall-image{
+    background-size: cover;
+    align-items: center; 
+    text-align: center;
+    height:100%;
+    width:auto;
+  }
+}
+
+
+.card-img-top {
+  width: 100%;
+  height: 250px; 
+  object-fit: cover; 
+}
+
+.star-book{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  border-color: rgba(120, 41, 34, 0.81);
+}
+
+.star-book:hover {
+  background-color: rgba(120, 41, 34, 0.81);
+  border-color: rgba(120, 41, 34, 0.81);
+}
+.star-book:active {
+  background-color: rgba(120, 41, 34, 0.81);
+  border-color: rgba(120, 41, 34, 0.81);
+}
+.custom-card{
+  border-width: 2px;
+  border-color: #AB392F;
+}
+
+.star-icon {
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 1.2rem;
+  color: rgba(120, 41, 34, 0.81);
+  cursor: pointer;
+}
+.star-icon .fa-regular {
+  color: rgba(120, 41, 34, 0.81); 
+}
+.star-icon .fa-solid {
+  display: none; /* 기본적으로 채워진 별은 숨김 */
+  color: rgba(120, 41, 34, 0.81); /* 채워진 별 색상 */
+}
+.star-icon:hover .fa-regular {
+  display: none; /* 비어있는 별 숨김 */
+}
+.star-icon:hover .fa-solid {
+  display: inline-block; /* 채워진 별 표시 */
+}
+
+
+
+.card-img-top {
+  width: 100%;
+  height: 250px; 
+  object-fit: cover; 
+}
+
+.star-book{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  border: 1px solid  rgba(120, 41, 34, 0.81);
+}
+
+.star-book:hover {
+  background-color: rgba(120, 41, 34, 0.81);
+  border-color: rgba(120, 41, 34, 0.81);
+}
+.star-book:active {
+  background-color: rgba(120, 41, 34, 0.81);
+  border-color: rgba(120, 41, 34, 0.81);
+}
+.custom-card{
+  border-width: 2px;
+  border-color: #AB392F;
+}
+
+.star-icon {
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 1.2rem;
+  color: rgba(120, 41, 34, 0.81);
+  cursor: pointer;
+}
+.star-icon .fa-regular {
+  color: rgba(120, 41, 34, 0.81); 
+}
+.star-icon .fa-solid {
+  display: none; /* 기본적으로 채워진 별은 숨김 */
+  color: rgba(120, 41, 34, 0.81); /* 채워진 별 색상 */
+}
+.star-icon:hover .fa-regular {
+  display: none; /* 비어있는 별 숨김 */
+}
+.star-icon:hover .fa-solid {
+  display: inline-block; /* 채워진 별 표시 */
+}
+
+
+
+
+/* 바닥 */
+.content{
+  margin: 0 auto;
+  padding: 10px 0;
+  position: relative;
+  background: rgba(120, 41, 34, 0.81);
+  width: 100%;
+}
+.footer-row{
+  display: flex;
+}
+.second-content{
+  margin: 0 auto;
+  padding: 10px 0;
+  background: #AB392F;
+  width: 100%;  
+  flex-direction: column;
+  flex-wrap: wrap; 
+}
+.foot-first-line{
+  position: relative;
+  margin: 0 0;
+  width: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  white-space: normal; 
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  bottom:0px;
+}
+.footer-container-fluid{
+  padding:0 150px;
+}
+
+.footer-left {
+  text-align: left;
+  padding-top:20px;
+  flex: 1;
+}
+.footer-right{
+  text-align: right;
+  justify-content: flex-start;
+}
+footer{
+  color: white;
+  justify-content: flex-end;
+  padding-top:20px;
+}
+.share-button{
+  margin-bottom: 15px;
+  margin-right: 15px;
+  font-size: 30px;
+  margin-left: 9px;
+}
+.footer-m{
+  display:none;
+}
+
+.footer-right img{
+  margin-right: 35px;
+}
+
+@media screen and (max-width: 48rem){
+  
+  .footer-left {
+    text-align: center;
+    white-space: normal;
+  }
+  
+  .footer-right{
+    justify-content: center; 
+    text-align: center;
+  }
+  .second-content {
+    flex-direction: column; 
+    padding-bottom: 10px;
+
+  }
+  .footer {
+    flex-direction: column; 
+    align-items: center; 
+  }
+  .footer-container-fluid {
+    padding-left: 15px; 
+    padding-right: 15px;
+  }
+  .text-center {
+    font-size: 1.2rem;
+    padding: 5px; 
+    line-height: 1.8;
+  }
+  .footer-row{
+    display: none;
+  }
+  .footer-m{
+    display: block;
+  }
+  .footer-right img{
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .footer-container-fluid {
+    padding-left: 15px; 
+    padding-right: 15px;
+  }
+}
+/* 바닥 */
+
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
 body, html {
@@ -36,7 +291,7 @@ body, html {
     height: 66px;
     margin-left: 0px;
     margin-top: -33px;
-    background: url(../img/long-logo.png) no-repeat center center;
+    background: url(./image/long-logo.png) no-repeat center center;
     background-size: auto 66px;
 }
 
@@ -57,7 +312,7 @@ body, html {
     width: 578px;
     height: 50px;
     padding-left: 9px;
-    margin-top: 19px;
+    margin-top: 12px;
     text-align: left;
     vertical-align: top;
     background: none;
@@ -305,7 +560,7 @@ nav a:hover{
       height: 66px;
       margin-left: 60px;
       margin-top: -33px;
-      background: url(../img/long-logo.png) no-repeat center center;
+      background: url(./image/long-logo.png) no-repeat center center;
       background-size: auto 66px;
   }
 
@@ -431,7 +686,7 @@ nav a:hover{
       height: 66px;
       margin-left: -45px;
       margin-top: -33px;
-      background: url(../img/long-logo.png) no-repeat center center;
+      background: url(./image/long-logo.png) no-repeat center center;
       background-size: auto 66px;
   }
 
@@ -643,3 +898,82 @@ nav a:hover{
       color: #AB392F;
   }
 }
+
+/*
+.carousel-item h4 {
+  font-weight: 600;
+}
+
+.main-carousel-text {
+  width: 100%;
+  position: relative;
+  bottom: 800px;
+  color: white;
+}
+
+.main-text1 {
+  padding-top: 90px;
+  text-align: end;
+  padding-right: 308px;
+}
+
+.main-text2 {
+  padding-bottom: 20px;
+  padding-top: 130px;
+  text-align: end;
+  font-weight: 700;
+  margin-right: 300px;
+}
+
+.main-text3 {
+  white-space: nowrap;
+  padding-bottom: 40px;
+  text-align: end;
+  font-weight: 400;
+  color: #454545;
+  margin-right: 300px;
+}
+
+.main-text3-img {
+  padding: 5.5px;
+  width: 30px;
+  height: 30px;
+  text-align: end;
+  border-radius: 30px;
+  border: 2px solid #2e2d2d;
+  background-color: white;
+}
+
+.main-text4 {
+  width: 260px;
+  height: 50px;
+  right: 0;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #AB392F;
+  border-radius: 6px;
+}
+
+.main-text4-img {
+  position: absolute;
+  right: 0.5rem;
+  margin-right: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
